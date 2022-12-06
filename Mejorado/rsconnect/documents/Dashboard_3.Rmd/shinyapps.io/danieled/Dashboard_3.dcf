@@ -1,0 +1,13 @@
+name: Dashboard_3
+title: Dashboard_3
+username:
+account: danieled
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7809302
+bundleId: 6589835
+url: https://danieled.shinyapps.io/Dashboard_3/
+when: 1670180038.50368
+lastSyncTime: 1670180038.50369
+asMultiple: FALSE
+asStatic: FALSE

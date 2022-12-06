@@ -1,0 +1,42 @@
+data01: Resumen de docentes asesores frente a la modalidad (Convenciones) final
+data02: Resumen de docentes evaluadores frente a la modalidad (Convenciones) final
+data03: Resumen de docentes asesores por tipo de contratacion - Por Modalida final
+data04: Resumen de docentes evaluadores por tipo de contratacion - Por Modalida final
+data05: Resumen de docentes asesores por tipo de contratacion - Por Programa final
+data06: Resumen de docentes evaluadores por tipo de contratacion - Por Programa final
+data070: Resumen de docentes asesores frente a la modalidad final
+data080: Resumen de docentes evaluadores frente a la modalidad final
+data090: Resumen de estudiantes por modalidad final
+data010: Resumen de estudiantes por programas final
+data0110: Resumen de trabajos de grado por modalidad final
+data012: Resumen de trabajos de grado por programas final
+data0120: titulos_trabajos_segmentados
+
+#------------------------------------------------------------------------------------------
+
+# Docentes
+(1): Docente* (nombre), modalidad convencion * (PCM, PSM, IFCM, IFSM, PR, IFR), periodo, semestre // Asesor y evaluador [x]
+(2): Modalidad, contratacion* (carrera, ocasional, catedra, asesor externo/otro, sin asesor), periodo, semestre // Asesor y evaluador [x]
+(3): Departamento, programa, contracion (+ especializacion), periodo, semestre // Asesor y evaluador [x]
+(4): Docente, modalidad (intervencion empresarial, proyecto de grado, practica profesional, procesos de investigacion), periodo, [x]
+     semestre  // Asesor y evaluador
+// Tipo docente* (Asesor y evaluador) [x]
+# Estudiantes
+(1): Modalidad, periodo, semestre [x]
+(2): Departamento, programa, periodo, semestre [x]
+(3): Departamento, programa, modalidad [x]
+(3): Programa*, modalidad*, titulo*, grupo ID*, cedula*, departamento*, periodo*, semestre* [x]
+// Nombre* [x]
+
+# Columnas unicas seran:
+Periodo*, semestre*, nombre estudiante-, cedula*, grupo ID-, departamento, programa-, modalidad-, titulo,
+modalidad convencion, docente asesor, docente evaluador, contratacion asesor, contratacion evaluador
+
+#------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------
+
+OBSERVACIONES:
+
+- Totalizador 2016-2: Exiten 2 cedulas que no corresponden y un duplicado que se toman en cuenta para la cantidad de estudiantes en monograia
+por lo tanto solo serian 173 y no 176
